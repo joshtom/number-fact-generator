@@ -9,7 +9,7 @@
                     {
                         var getFactFetch = () => {
                             let number = numberInput.value;
-                            fetch('http://numbersapi.com/'+number+'/year')
+                            fetch('https://numbersapi.com/'+number+'/year')
                             .then(response => response.text())
                             .then(data => {
                                 if (number != ""){
