@@ -9,7 +9,7 @@
                     {
                         var getFactFetch = () => {
                             let number = numberInput.value;
-                            fetch('https://numbersapi.com/'+number+'/year')
+                            fetch('http://numbersapi.com/'+number+'/year')
                             .then(response => response.text())
                             .then(data => {
                                 if (number != ""){
@@ -28,7 +28,7 @@
                    
            let getFactFetch = () => {
                     let number = numberInput.value;
-                    fetch('https://numbersapi.com/'+number)
+                    fetch('http://numbersapi.com/'+number)
                     .then(response => response.text())
                     .then(data => {
                         if (number != ""){
@@ -47,7 +47,7 @@
                 // This will be the default in case the random year is not triggered
                  let getFactFetch = () => {
                     let number = numberInput.value;
-                    fetch('https://numbersapi.com/'+number)
+                    fetch('http://numbersapi.com/'+number)
                     .then(response => response.text())
                     .then(data => {
                         if (number != ""){
