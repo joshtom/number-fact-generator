@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Number Fact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Abel|Indie+Flower|Montserrat|Pacifico|Ramabhadra&display=swap');
+        body{
+            background: url('cool-background.png') !important;
+        }
         h1{
             font-family: 'Abel', sans-serif;
             font-weight: bolder;
@@ -17,18 +21,24 @@
             font-family: 'Montserrat', sans-serif;
             
         }
+        .card{
+            background: rgba(0,0,0,.6) !important;
+        }
     </style>
 </head>
 <body class="bg-dark">
       <div class="container">
           <div class="row">
+            
               <div class="col-md-6 mx-auto">
+              <h3 class="text-white mt-5 text-center">Random Number Fact Generator By JOSHUA</h3>
                   <div class="card bg-primary text-white mt-5 p-4">
                       <h1>Number Facts</h1>
-                      <div class="form-group">
-                          <input type="checkbox" id="year" onclick="getRandomYear();"> <label for="year">GET FACT ON YEAR</label>
-                      </div>
                       <p>Enter a number and get a random fact</p>
+                      <div class="form-group">
+                          <input type="checkbox" id="year" onclick="getRandomYear();"> <label for="year">CLICK TO GET FACT ON YEAR</label>
+                      </div>
+                      
                       <input type="number" class="form-control form-control-lg" id="numberInput" placeholder="Enter any number">
                       <div id="fact" class="card-body">
                           <h4 class="card-title">Fact Generated</h4>

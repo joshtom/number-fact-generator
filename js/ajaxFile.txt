@@ -1,0 +1,17 @@
+// Using Pure Ajax
+const getFactAjax = () => {
+             // Getting the user input
+            let number = numberInput.value;
+            // Getting request from the api
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', 'http://numbersapi.com/'+number);
+
+            xhr.onload = function (){
+                if (this.status == 200 && number != ""){ //The alternative is number != ""
+                    // console.log(this.responseText);
+                    fact.style.display = 'block';
+                    factText.innerText = this.responseText;
+                }
+            }
+            xhr.send();
+        }
